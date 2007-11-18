@@ -6,9 +6,9 @@ Group:		Graphical desktop/Xfce
 License:	BSD
 URL:		http://goodies.xfce.org/projects/panel-plugins/%{name}
 Source0:	http://goodies.xfce.org/releases/%{oname}/%{name}-%{version}.tar.bz2
-BuildRequires:	xfce-panel-devel >= 4.4.1
+BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
-Requires:	xfce-panel >= 4.4.1
+Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-wavelan-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
