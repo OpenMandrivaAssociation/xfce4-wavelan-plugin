@@ -10,6 +10,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-wavelan-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A plugin for the Xfce panel that monitors a wireless LAN interface. It 
