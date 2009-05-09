@@ -1,11 +1,11 @@
 Summary:	WaveLAN plugin for the Xfce panel
 Name:		xfce4-wavelan-plugin
-Version:	0.5.4
-Release:	%mkrel 8
+Version:	0.5.5
+Release:	%mkrel 1
 Group:		Graphical desktop/Xfce
 License:	BSD
 URL:		http://goodies.xfce.org/projects/panel-plugins/%{name}
-Source0:	http://goodies.xfce.org/releases/%{oname}/%{name}-%{version}.tar.bz2
+Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 Requires:	xfce4-panel >= 4.4.2
