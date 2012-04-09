@@ -8,6 +8,7 @@ Group:		Graphical desktop/Xfce
 License:	BSD
 URL:		http://goodies.xfce.org/projects/panel-plugins/%{name}
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
+Patch1:		xfce4-wavelan-0.5.6-gold.patch
 BuildRequires:	xfce4-panel-devel >= 4.7
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libxfce4util-devel
@@ -22,6 +23,8 @@ displays stats for signal state, signal quality and network name (SSID).
 
 %prep
 %setup -q
+%patch1 -p0
+autoconf
 
 %build
 %configure2_5x \
