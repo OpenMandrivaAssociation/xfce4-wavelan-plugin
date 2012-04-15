@@ -31,9 +31,11 @@ displays stats for signal state, signal quality and network name (SSID).
 %install
 %makeinstall_std
 
+find %{buildroot} -name "*.la" -exec rm -rf {} \;
+
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README
-%{_libdir}/xfce4/panel-plugins/%{name}
-%{_datadir}/xfce4/panel-plugins/*.desktop
+%{_libdir}/xfce4/panel/plugins/libwavelan.so
+%{_datadir}/xfce4/panel/plugins/*.desktop
