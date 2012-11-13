@@ -1,0 +1,10 @@
+--- configure.ac.orig	2012-04-09 19:55:36.161439036 +0100
++++ configure.ac	2012-04-09 19:55:44.102438590 +0100
+@@ -50,6 +50,7 @@
+ XDT_CHECK_PACKAGE([LIBXFCE4PANEL], [libxfce4panel-1.0], [4.3.20])
+ XDT_CHECK_PACKAGE([LIBXFCEGUI4], [libxfcegui4-1.0], [4.3.20])
+ XDT_CHECK_PACKAGE([GTK], [gtk+-2.0], [2.6.0])
++AC_SEARCH_LIBS(floor, m)
+ 
+ dnl Check for debugging support
+ BM_DEBUG_SUPPORT()
