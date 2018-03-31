@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xfce4-wavelan-plugin-0.5.11.tar.bz2: 18e080897eecdcd44abfa877820b6f9c0d506ca3
+sources:
+  xfce4-wavelan-plugin-0.6.0.tar.bz2: 1f59e309638d40676226dc4ad86991841cca43f1
