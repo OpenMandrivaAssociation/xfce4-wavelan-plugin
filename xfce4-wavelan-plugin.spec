@@ -3,7 +3,7 @@
 
 Summary:	WaveLAN plugin for the Xfce panel
 Name:		xfce4-wavelan-plugin
-Version:	0.6.1
+Version:	0.6.2
 Release:	1
 Group:		Graphical desktop/Xfce
 License:	BSD
@@ -34,6 +34,6 @@ chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/libwavelan.so
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS README*
 %{_libdir}/xfce4/panel/plugins/libwavelan.so
 %{_datadir}/xfce4/panel/plugins/*.desktop
