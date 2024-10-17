@@ -7,7 +7,7 @@ Version:	0.6.3
 Release:	2
 Group:		Graphical desktop/Xfce
 License:	BSD
-URL:		http://goodies.xfce.org/projects/panel-plugins/%{name}
+URL:		https://goodies.xfce.org/projects/panel-plugins/%{name}
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
