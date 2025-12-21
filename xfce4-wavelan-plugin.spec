@@ -10,6 +10,11 @@ License:	BSD
 URL:		https://goodies.xfce.org/projects/panel-plugins/%{name}
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
