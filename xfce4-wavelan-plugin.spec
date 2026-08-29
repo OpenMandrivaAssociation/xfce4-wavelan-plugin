@@ -3,20 +3,16 @@
 
 Summary:	WaveLAN plugin for the Xfce panel
 Name:		xfce4-wavelan-plugin
-Version:	0.6.4
+Version:	0.7.0
 Release:	1
 Group:		Graphical desktop/Xfce
 License:	BSD
 URL:		https://goodies.xfce.org/projects/panel-plugins/%{name}
 Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-wavelan-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
+BuildRequires:	meson
 BuildRequires:	make
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
-BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(libxfce4util-1.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 
@@ -25,20 +21,19 @@ A plugin for the Xfce panel that monitors a wireless LAN interface. It
 displays stats for signal state, signal quality and network name (SSID).
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure \
-	--disable-static
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 chmod +x %{buildroot}%{_libdir}/xfce4/panel/plugins/libwavelan.so
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog NEWS README*
+%doc AUTHORS NEWS README*
 %{_libdir}/xfce4/panel/plugins/libwavelan.so
 %{_datadir}/xfce4/panel/plugins/*.desktop
